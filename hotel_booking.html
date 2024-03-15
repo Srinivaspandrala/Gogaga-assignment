@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://dynamic.placementindia.com/recruiter_comp_logo/606673.jpg" width="30" height="30" class="d-inline-block align-top logo-size" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hoildays packages.html">HolidayPackages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="flight_booking.html">FlightBooking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hotel_booking.html">HotelBooking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hoildays packages_collection.html">PackageCollections</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="hotel" class="container my-5">
+        <h2>Hotel Booking</h2>
+        <!-- Include hotel search and booking form -->
+        <form>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <select id="location" name="location" class="form-control" required>
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="Hyderabad">Hyderabad, Telangana</option>
+                    <option value="Warangal">Warangal, Telangana</option>
+                    <option value="Visakhapatnam">Visakhapatnam, Andhra Pradesh</option>
+                    <!-- Add more cities as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="checkin">Check-in:</label>
+                <input type="date" id="checkin" name="checkin" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="checkout">Check-out:</label>
+                <input type="date" id="checkout" name="checkout" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Search Hotels</button>
+        </form>
+    </section>
+
+
+</body>
+
+</html>

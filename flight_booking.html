@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://dynamic.placementindia.com/recruiter_comp_logo/606673.jpg" width="30" height="30" class="d-inline-block align-top logo-size" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hoildays packages.html">HolidayPackages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="flight_booking.html">FlightBooking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hotel_booking.html">HotelBooking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hoildays packages_collection.html">PackageCollections</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="flight" class="container my-5">
+        <h2>Flight Booking</h2>
+        <!-- Include flight search and booking form -->
+        <form>
+            <div class="form-group">
+                <label for="departure">Departure:</label>
+                <select id="departure" name="departure" class="form-control" required>
+                    <option value="" disabled selected>Select Departure City</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Trivandrum">Trivandrum</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Mangalore">Mangalore</option>
+                    <option value="Vijayawada">Vijayawada</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Tiruchirappalli">Tiruchirappalli</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Salem">Salem</option>
+                    <option value="Tiruppur">Tiruppur</option>
+                    <option value="Erode">Erode</option>
+                    <option value="Thanjavur">Thanjavur</option>
+                    <option value="Tirunelveli">Tirunelveli</option>
+                    <option value="Karur">Karur</option>
+                    <option value="Nagercoil">Nagercoil</option>
+                    <option value="Dindigul">Dindigul</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Surat">Surat</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination" class="form-control" required>
+                    <option value="" disabled selected>Select Destination City</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Trivandrum">Trivandrum</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Mangalore">Mangalore</option>
+                    <option value="Vijayawada">Vijayawada</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Tiruchirappalli">Tiruchirappalli</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Salem">Salem</option>
+                    <option value="Tiruppur">Tiruppur</option>
+                    <option value="Erode">Erode</option>
+                    <option value="Thanjavur">Thanjavur</option>
+                    <option value="Tirunelveli">Tirunelveli</option>
+                    <option value="Karur">Karur</option>
+                    <option value="Nagercoil">Nagercoil</option>
+                    <option value="Dindigul">Dindigul</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Surat">Surat</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Search Flights</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
